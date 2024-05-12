@@ -9,17 +9,20 @@ def create_app():
     @app.route('/')
     def home():
         return 'Hello World123!'
-name = "sudhansu"
-company = "gfg"   
-def a():
-    print("abcd")
-    a()
-def b(x, y):
-    z= x+y
-    print(z)
+    
+    name = "sudhansu"
+    company = "gfg"   
+    def a():
+        print("abcd")
+        a()
+    def b(x, y):
+        z= x+y
+        print(z)
 
-def add(a,b):
-    c=a+b
+    def add(a,b):
+        c=a+b
+        
+    return app
 
 
 if __name__ == '__main__':
