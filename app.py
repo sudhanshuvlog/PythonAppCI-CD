@@ -8,20 +8,7 @@ def create_app():
 
     @app.route('/')
     def home():
-        return 'Hello World123!'
-    
-    name = "sudhanshu"
-    company = "gfg"   
-    def a():
-        print("abcd")
-        a()
-    def b(x, y):
-        z= x+y
-        print(z)
-
-    def add(a,b):
-        c=a+b
-        
+        return 'Hello World123!"
     return app
 
 
