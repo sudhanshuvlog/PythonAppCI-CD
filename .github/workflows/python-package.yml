@@ -60,6 +60,7 @@ jobs:
 
   docker-build-and-push-to-dockerhub:
     runs-on: ubuntu-latest
+    needs: [build-and-test-python-app, sonarqube-scanner ]
     steps:
       - name: Docker Setup QEMU
         uses: docker/setup-qemu-action@v3.0.0
