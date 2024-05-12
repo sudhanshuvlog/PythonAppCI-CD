@@ -10,7 +10,7 @@ def create_app():
     def home():
         return 'Hello World123!'
     
-    name = "sudhansu"
+    name = "sudhanshu"
     company = "gfg"   
     def a():
         print("abcd")
