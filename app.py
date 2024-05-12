@@ -9,8 +9,19 @@ def create_app():
     @app.route('/')
     def home():
         return 'Hello World123!'
+name = "sudhansu"
+company = "gfg"   
+def a():
+    print("abcd")
+    a()
+def b(x, y):
+    z= x+y
+    print(z)
 
-    return app
+def add(a,b):
+    c=a+b
+
+
 if __name__ == '__main__':
     app = create_app()
     app.run(host='0.0.0.0', port=80, debug=True)
