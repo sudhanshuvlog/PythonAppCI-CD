@@ -12,6 +12,7 @@ stages{
     }
     stage(" Deploy the container"){
         steps{
+            sh "docker rm -f webos"
             sh "docker run -dit --name webos -p 80:80 jinny1/gfgdevops20flask"
         }
     }
